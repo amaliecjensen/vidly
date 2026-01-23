@@ -1,0 +1,11 @@
+{% extends 'movies/base.html' %}
+
+{% block content %}
+<h1>{{ movie.title }}</h1>
+<ul>
+    <li>Genre: {{ movie.genre }}</li>
+    <li>Release Year: {{ movie.release_year }}</li>
+    <li>Stock: {{ movie.number_in_stock }}</li>
+    <li>Daily Rate: ${{ movie.daily_rate }}</li>
+</ul>
+{% endblock %}
